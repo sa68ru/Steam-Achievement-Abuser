@@ -53,6 +53,8 @@ namespace Steam_Achievement_Abuser
                     p.WaitForExit();
                 i++;
             }
+			Console.WriteLine("");
+			Console.WriteLine("Done!");
         }
         static void AddGames()
         {
