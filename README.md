@@ -1,4 +1,5 @@
 Steam-Achievement-Abuser
+
 Based on: https://github.com/gibbed/SteamAchievementManager
 
 What is it?
