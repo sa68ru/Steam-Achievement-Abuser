@@ -1,4 +1,4 @@
-![Main](https://f.avitomin.ru/TEST.png)
+![Main](https://sa68ru.xyz/s/TEST.png)
 
 # Steam Achievement Abuser
 
