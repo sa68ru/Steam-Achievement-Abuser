@@ -1,4 +1,5 @@
 Steam-Achievement-Abuser
+
 Based on: https://github.com/gibbed/SteamAchievementManager
 
 What is it?
@@ -9,4 +10,5 @@ How to use:
 2. Unpack in some folder
 3. Start Steam 
 4. Start Steam Achievement Abuser.exe
+
 Done!
