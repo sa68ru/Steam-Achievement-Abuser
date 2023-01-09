@@ -1,9 +1,0 @@
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\bin\Debug\Steam Achievement Abuser App.exe.config
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\bin\Debug\Steam Achievement Abuser App.exe
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\bin\Debug\Steam Achievement Abuser App.pdb
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\Steam Achievement Abuser App\obj\Debug\Steam Achievement Abuser App.csproj.AssemblyReference.cache
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\Steam Achievement Abuser App\obj\Debug\Steam Achievement Abuser App.csproj.SuggestedBindingRedirects.cache
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\Steam Achievement Abuser App\obj\Debug\Steam Achievement Abuser App.csproj.CoreCompileInputs.cache
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\Steam Achievement Abuser App\obj\Debug\Steam Achievement Abuser App.csproj.CopyComplete
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\Steam Achievement Abuser App\obj\Debug\Steam Achievement Abuser App.exe
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\Steam Achievement Abuser App\obj\Debug\Steam Achievement Abuser App.pdb

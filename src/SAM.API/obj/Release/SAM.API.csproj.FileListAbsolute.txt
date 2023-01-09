@@ -1,4 +1,0 @@
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\bin\Release\SAM.API.dll
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\SAM.API\obj\Release\SAM.API.csproj.AssemblyReference.cache
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\SAM.API\obj\Release\SAM.API.csproj.CoreCompileInputs.cache
-C:\Users\mrdun\Desktop\ach abuser fork\Steam-Achievement-Abuser\src\SAM.API\obj\Release\SAM.API.dll
