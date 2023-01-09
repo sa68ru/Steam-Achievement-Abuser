@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Xml.XPath;
+using Newtonsoft.Json;
 
 namespace Steam_Achievement_Abuser
 {
@@ -18,7 +19,7 @@ namespace Steam_Achievement_Abuser
         static void Main()
         {
             Console.Title = "Steam Achievement Abuser";
-            Console.WriteLine("Welcome to Steam Achievement Abuser by sa68ru.xyz");
+            Console.WriteLine("Welcome to Steam Achievement Abuser by sa68ru.xyz (Cache added by KaiFu_)");
             Console.WriteLine("Based on: https://github.com/gibbed/SteamAchievementManager");
             Console.WriteLine("Init...");
             try
@@ -33,15 +34,59 @@ namespace Steam_Achievement_Abuser
             }
             AddGames();
             Console.WriteLine($"Found {_Games.Count()} games...");
+            string data;
+            cache cach = new cache();
+            if (File.Exists("cache.json"))
+            {
+                data = File.ReadAllText("cache.json");
+                cach = JsonConvert.DeserializeObject<cache>(data);
+                Console.WriteLine($"{cach.names.Count} already done...");
+                List<GameInfo> toremovegames = new List<GameInfo>();
+                foreach(var name in cach.names)
+                {
+                    foreach(var game in _Games)
+                    {
+                        if (name == game.Name)
+                            toremovegames.Add(game);
+                    }
+                }
+                foreach(var game in toremovegames)
+                {
+                    _Games.Remove(game);
+                }
+                if(_Games.Count > 0)
+                {
+                    foreach(var game in _Games)
+                    {
+                        cach.names.Add(game.Name);
+                    }
+                    File.WriteAllText("cache.json", JsonConvert.SerializeObject(cach));
+                    Console.WriteLine("Added new Games to cache...");
+                }
+                Console.WriteLine($"{_Games.Count} remain...");
+            }
+            else
+            {
+                File.Create("cache.json").Close();
+                foreach(var game in _Games)
+                {
+                    cach.names.Add(game.Name);
+                }
+                File.WriteAllText("cache.json",JsonConvert.SerializeObject(cach));
+            }
             Console.WriteLine("");
             Console.WriteLine("Press key for start abuse...");
             Console.ReadKey();
-            StartAbuse();
+            if(_Games.Count > 0)
+                StartAbuse();
+            else
+                Console.WriteLine("All Games already Done...");
             Console.ReadKey();
         }
         static void StartAbuse()
         {
             Console.WriteLine("Starting abuse...");
+
             int i = 1;
             foreach (var Game in _Games)
             {
@@ -116,5 +161,9 @@ namespace Steam_Achievement_Abuser
             this.Type = type;
             this.Name = null;
         }
+    }
+    internal class cache
+    {
+        public List<string> names = new List<string>();
     }
 }
